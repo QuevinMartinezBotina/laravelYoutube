@@ -32,6 +32,7 @@ Route::get('cursos/{curso}/edit', [CursoController::class, 'edit'])->name('curso
 
 Route::put('cursos/{curso}', [CursoController::class, 'update'])->name('cursos.update');
 
+Route::delete('cursos/{curso}', [CursoController::class, 'destroy'])->name('cursos.destroy');
 
 Route::get('/view', function () {
     return view('welcome');
