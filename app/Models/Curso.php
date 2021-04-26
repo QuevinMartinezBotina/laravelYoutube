@@ -13,4 +13,9 @@ class Curso extends Model
      porque son pocos*/
 
     protected $guarded = []; /* Pero en este, le decimos solo cual proteger, esto nos sirve en caso de ser muchos*/
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }
